@@ -1,0 +1,255 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+@keyframes slideBackground {
+    0% {
+        background: url('Gym1.jpg') no-repeat center center/cover;
+    }
+    33.33% {
+        background: url('Gym2.jpg') no-repeat center center/cover;
+    }
+    66.66% {
+        background: url('Gym3.jpg') no-repeat center center/cover;
+    }
+    100% {
+        background: url('Gym1.jpg') no-repeat center center/cover;
+    }
+}
+
+header {
+    animation: slideBackground 15s infinite; /* Durasi 15 detik untuk 3 gambar */
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Tomato color */
+}
+
+/* Hero Section */
+#hero {
+    background: url('images/gym-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.cta {
+    background: #ff6347; /* Tomato color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background0.3s;
+}
+
+.cta:hover {
+    background: #e5533c; /* Darker Tomato */
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    margin-bottom: 15px;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+}
+
+#gallery h2 {
+    margin-bottom: 30px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff6347; /* Tomato color */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e5533c; /* Darker Tomato */
+}
+
+#cartSection {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#totalPrice {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#cartSection button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #37d7ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#cartSection button:hover {
+    background-color: #1ca3cc;
+}
+
+
+/*
